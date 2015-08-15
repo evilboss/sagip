@@ -13,7 +13,18 @@
     color: white;
 }
 
-.help-btn {
-    background: url("");
+/*#ambulance {
     background-size: contain;
+    background: url("");
+}*/
+#fire {
+    background-size: contain;
+    background: url("/public/icons/fire.png") no-repeat;
+}
+
+.round-btn {
+    border-radius: 50%;
+}
+.row{
+    margin-bottom: 15px;
 }
