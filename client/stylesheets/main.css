@@ -1,0 +1,19 @@
+/*****************************************************************************/
+/* main: Style */
+/*****************************************************************************/
+.main {
+}
+
+.navbar-color {
+    background-color: #e74c3c;
+    border-color: transparent;
+}
+
+.navbar-header > a {
+    color: white;
+}
+
+.help-btn {
+    background: url("");
+    background-size: contain;
+}
