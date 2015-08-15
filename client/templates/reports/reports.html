@@ -1,0 +1,15 @@
+<template name="Reports">
+    <div class="reports">
+        <ul>
+            {{#each report}}
+                <li>
+                    {{this._id}}
+                    {{this.sessionId}}
+                    {{this.type}}
+                </li>
+            {{/each}}
+
+        </ul>
+
+    </div>
+</template>

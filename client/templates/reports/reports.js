@@ -1,34 +1,26 @@
 /*****************************************************************************/
-/* Home: Event Handlers */
+/* Reports: Event Handlers */
 /*****************************************************************************/
-Template.home.events({
-    'click button ':function(e){
-
-        Report.insert({sessionId: Meteor.default_connection._lastSessionId, type: e.currentTarget.id});
-
-
-    }
-
+Template.Reports.events({
 });
 
 /*****************************************************************************/
-/* Home: Helpers */
+/* Reports: Helpers */
 /*****************************************************************************/
-Template.home.helpers({
-    'test':function(){
-        return 'butu';
+Template.Reports.helpers({
+    'report':function(){
+        return Report.find();
     }
 });
 
 /*****************************************************************************/
-/* Home: Lifecycle Hooks */
+/* Reports: Lifecycle Hooks */
 /*****************************************************************************/
-Template.home.onCreated(function () {
+Template.Reports.onCreated(function () {
 });
 
-Template.home.onRendered(function () {
-
+Template.Reports.onRendered(function () {
 });
 
-Template.home.onDestroyed(function () {
+Template.Reports.onDestroyed(function () {
 });

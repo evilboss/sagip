@@ -6,6 +6,8 @@
 meteor-platform
 less
 accounts-password
+autopublish
+insecure
 useraccounts:bootstrap
 alanning:roles
 zimme:iron-router-active
