@@ -37,3 +37,17 @@
     width: 96px;
     height: 96px !important;
 }
+
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.card {
+    padding-top: 10px;
+    border-radius: 12px;
+}
+
+.card .card-content .card-title {
+    line-height: 17px;
+}
