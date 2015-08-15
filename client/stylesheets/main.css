@@ -32,3 +32,8 @@
     width: 200px;
     height: 200px;
 }
+
+.icon {
+    width: 96px;
+    height: 96px !important;
+}
