@@ -13,18 +13,22 @@
     color: white;
 }
 
-/*#ambulance {
+/*#fire {
     background-size: contain;
-    background: url("");
+    background-image: url("/icons/fire.png");
+    background-position: center;
+    background-repeat: no-repeat;
 }*/
-#fire {
-    background-size: contain;
-    background: url("/public/icons/fire.png") no-repeat;
-}
 
 .round-btn {
     border-radius: 50%;
 }
-.row{
-    margin-bottom: 15px;
+
+.row {
+    margin-bottom: 50px;
+}
+
+.btn-xl {
+    width: 200px;
+    height: 200px;
 }
