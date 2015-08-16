@@ -2,9 +2,13 @@
 /* Home: Event Handlers */
 /*****************************************************************************/
 Template.home.events({
-    'click button ':function(e){
+    'click div.card ': function (e) {
 
-        Report.insert({sessionId: Meteor.default_connection._lastSessionId, type: e.currentTarget.id});
+        Report.insert(
+            {
+                sessionId: Meteor.default_connection._lastSessionId,
+                type: e.currentTarget.id
+            });
 
 
     }
@@ -15,9 +19,13 @@ Template.home.events({
 /* Home: Helpers */
 /*****************************************************************************/
 Template.home.helpers({
-    'test':function(){
-        return 'butu';
+    'loc': function () {
+        return Geolocation.currentLocation();
+    },
+    'location': function () {
+        return Session.get('location');
     }
+
 });
 
 /*****************************************************************************/
@@ -27,6 +35,7 @@ Template.home.onCreated(function () {
 });
 
 Template.home.onRendered(function () {
+
 
 });
 

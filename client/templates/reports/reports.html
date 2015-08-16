@@ -1,15 +1,30 @@
 <template name="Reports">
     <div class="reports">
-        <ul>
-            {{#each report}}
-                <li>
-                    {{this._id}}
-                    {{this.sessionId}}
-                    {{this.type}}
-                </li>
-            {{/each}}
+        {{#if hasContent}}
 
-        </ul>
+            <ul>
+                {{#each report}}
+
+                    <li>
+
+                        {{this.type}}
+                    </li>
+                    {{#if this.lan}}
+                        <iframe src="http://static.parastorage.com/services/santa/1.819.3/static/external/googleMap.html?lat={{this.lat}}&amp;long={{this.long}}&amp;mapInteractive=false&amp;mapType=ROADMAP&amp;showMapType=false&amp;showPosition=false&amp;showStreetView=false&amp;showZoom=true&amp;ts=1300"
+                                width="100%" height="100%" scrolling="yes"></iframe>
+                    {{/if}}
+
+
+
+
+
+
+                {{/each}}
+
+            </ul>
+        {{else}}
+            no reports
+        {{/if}}
 
     </div>
 </template>

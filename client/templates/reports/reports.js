@@ -10,6 +10,9 @@ Template.Reports.events({
 Template.Reports.helpers({
     'report':function(){
         return Report.find();
+    },
+    'hasContent':function(){
+        return Report.find().count();
     }
 });
 
