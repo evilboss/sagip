@@ -1,0 +1,7 @@
+    {
+    "appIcons": {
+        "source": "public/images/logo.png",
+        "output": "resources/icons/",
+        "type": ["ios"]
+    }
+    }
