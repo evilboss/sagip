@@ -23,6 +23,8 @@ cunneen:mailgun
 iron:router@1.0.0
 yasinuslu:blaze-meta
 aldeed:collection2
+http
 simple:rest
 aldeed:autoform
 mdg:geolocation
+houston:admin

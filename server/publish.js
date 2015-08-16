@@ -4,8 +4,3 @@ Meteor.publish("report", function (index) {
     url: "api/report",
     httpMethod: "get"
 });
-HTTP.post("api/report", {
-
-}, function (err, res) {
-    console.log(res.data); // 5
-});
